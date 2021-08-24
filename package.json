@@ -12,6 +12,7 @@
     "compression": "^1.7.1",
     "express": "^4.17.1",
     "mongoose": "^5.13.8",
+    "mysql2": "^2.3.0",
     "polka": "next",
     "sirv": "^1.0.0"
   },
