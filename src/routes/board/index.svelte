@@ -18,26 +18,18 @@
     <div class="rowhead">
       <div class="row ">번호</div>
       <div class="row">제목</div>
-      <div class="row">내용</div>
       <div class="row">작성자</div>
-      <div class="row">조회수</div>
       <div class="row">작성일</div>
-      <div class="row">비밀번호</div>
-      <div class="row">삭제</div>
-      <div class="row">수정</div>
+      <div class="row">조회수</div>
     </div>
 
     {#each products as board}
       <div class="boardlist">
         <div class="row">{board.num}</div>
         <div class="row">{board.subject}</div>
-        <div class="row">{board.content}</div>
         <div class="row">{board.name}</div>
-        <div class="row">{board.views}</div>
         <div class="row">{board.wdate}</div>
-        <div class="row">{board.passwd}</div>
-        <div class="row"><button>삭제</button></div>
-        <div class="row"><button>수정</button></div>
+        <div class="row">{board.views}</div>
       </div>
     {/each}
   </div>
@@ -79,32 +71,26 @@
     line-height: 50px;
   }
   .row:nth-child(1) {
-    flex-basis: 10%;
+    flex-basis: 7%;
   }
   .row:nth-child(2) {
-    flex-basis: 15%;
+    flex-basis: 50%;
   }
   .row:nth-child(3) {
     flex-basis: 15%;
   }
   .row:nth-child(4) {
-    flex-basis: 10%;
+    flex-basis: 20%;
   }
   .row:nth-child(5) {
-    flex-basis: 10%;
+    flex-basis: 8%;
   }
-  .row:nth-child(6) {
-    flex-basis: 10%;
+  .row:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
-  .row:nth-child(7) {
-    flex-basis: 10%;
-  }
-  .row:nth-child(8) {
-    flex-basis: 10%;
-  }
-  .row:nth-child(9) {
-    flex-basis: 10%;
-  }
+
   @media (min-width: 480px) {
   }
 </style>
